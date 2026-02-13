@@ -1,0 +1,48 @@
+{
+    "header": {
+        "title": {
+            "type": "text",
+            "value": "Profile Settings"
+        },
+        "desc": {
+            "type": "text",
+            "value": "Manage your personal information here."
+        }
+    },
+    "labels": {
+        "username": {
+            "type": "text",
+            "value": "Username"
+        },
+        "fullname": {
+            "type": "text",
+            "value": "Full Name"
+        },
+        "bio": {
+            "type": "text",
+            "value": "Bio"
+        },
+        "language": {
+            "type": "text",
+            "value": "Language Preference"
+        },
+        "theme": {
+            "type": "text",
+            "value": "Theme"
+        }
+    },
+    "notifications": {
+        "title": {
+            "type": "text",
+            "value": "Notifications"
+        },
+        "email_alert": {
+            "type": "text",
+            "value": "Enable email notifications"
+        },
+        "sms_alert": {
+            "type": "text",
+            "value": "Enable SMS notifications"
+        }
+    }
+}

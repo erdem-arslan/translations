@@ -1,15 +1,68 @@
 {
-    "ns": "auth",
-    "version": "v1",
-    "lang": "tr-tr",
-    "data": {
-        "login": {
-            "title": "Giriş Yap",
-            "subtitle": "Hesabınıza erişin",
-            "welcome": "Hoşgeldin :Name"
+    "login": {
+        "title": {
+            "type": "text",
+            "value": "Giriş Yap"
         },
-        "register": {
-            "title": "Kayıt Ol"
+        "subtitle": {
+            "type": "text",
+            "value": "Devam etmek için hesabınıza erişin"
+        },
+        "email_placeholder": {
+            "type": "text",
+            "value": "E-posta adresiniz"
+        },
+        "password_placeholder": {
+            "type": "text",
+            "value": "Şifreniz"
+        },
+        "forgot_password": {
+            "type": "text",
+            "value": "Şifremi Unuttum"
+        },
+        "submit": {
+            "type": "text",
+            "value": "Giriş Yap"
+        },
+        "no_account": {
+            "type": "text",
+            "value": "Hesabınız yok mu? Kayıt Olun"
+        },
+        "welcome": {
+            "type": "text",
+            "value": "Hoşgeldin :Name"
+        }
+    },
+    "register": {
+        "title": {
+            "type": "text",
+            "value": "Yeni Hesap Oluştur"
+        },
+        "subtitle": {
+            "type": "text",
+            "value": "Hızlı ve kolay kayıt"
+        },
+        "submit": {
+            "type": "text",
+            "value": "Kayıt Ol"
+        },
+        "terms": {
+            "type": "text",
+            "value": "Kayıt olarak Hizmet Şartlarını kabul etmiş olursunuz."
+        }
+    },
+    "errors": {
+        "invalid_email": {
+            "type": "text",
+            "value": "Geçersiz e-posta adresi."
+        },
+        "password_short": {
+            "type": "text",
+            "value": "Şifre en az 6 karakter olmalıdır."
+        },
+        "user_not_found": {
+            "type": "text",
+            "value": "Böyle bir kullanıcı bulunamadı."
         }
     }
 }

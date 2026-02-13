@@ -1,0 +1,14 @@
+{
+    "success": {
+        "generic": {
+            "type": "text",
+            "value": "Operation successful."
+        }
+    },
+    "error": {
+        "generic": {
+            "type": "text",
+            "value": "An error occurred."
+        }
+    }
+}

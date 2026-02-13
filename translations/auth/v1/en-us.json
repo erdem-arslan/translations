@@ -1,15 +1,68 @@
 {
-    "ns": "auth",
-    "version": "v1",
-    "lang": "en-us",
-    "data": {
-        "login": {
-            "title": "Login",
-            "subtitle": "Access your account",
-            "welcome": "Welcome :Name"
+    "login": {
+        "title": {
+            "type": "text",
+            "value": "Login"
         },
-        "register": {
-            "title": "Register"
+        "subtitle": {
+            "type": "text",
+            "value": "Access your account to continue"
+        },
+        "email_placeholder": {
+            "type": "text",
+            "value": "Your email address"
+        },
+        "password_placeholder": {
+            "type": "text",
+            "value": "Your password"
+        },
+        "forgot_password": {
+            "type": "text",
+            "value": "Forgot Password?"
+        },
+        "submit": {
+            "type": "text",
+            "value": "Sign In"
+        },
+        "no_account": {
+            "type": "text",
+            "value": "Don't have an account? Sign Up"
+        },
+        "welcome": {
+            "type": "text",
+            "value": "Welcome :Name"
+        }
+    },
+    "register": {
+        "title": {
+            "type": "text",
+            "value": "Create New Account"
+        },
+        "subtitle": {
+            "type": "text",
+            "value": "Quick and easy registration"
+        },
+        "submit": {
+            "type": "text",
+            "value": "Sign Up"
+        },
+        "terms": {
+            "type": "text",
+            "value": "By registering, you agree to our Terms of Service."
+        }
+    },
+    "errors": {
+        "invalid_email": {
+            "type": "text",
+            "value": "Invalid email address."
+        },
+        "password_short": {
+            "type": "text",
+            "value": "Password must be at least 6 characters."
+        },
+        "user_not_found": {
+            "type": "text",
+            "value": "User not found."
         }
     }
 }
