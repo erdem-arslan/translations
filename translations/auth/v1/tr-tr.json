@@ -1,0 +1,15 @@
+{
+    "ns": "auth",
+    "version": "v1",
+    "lang": "tr-tr",
+    "data": {
+        "login": {
+            "title": "Giriş Yap",
+            "subtitle": "Hesabınıza erişin",
+            "welcome": "Hoşgeldin :Name"
+        },
+        "register": {
+            "title": "Kayıt Ol"
+        }
+    }
+}

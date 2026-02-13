@@ -1,0 +1,17 @@
+{
+    "ns": "common",
+    "version": "v1",
+    "lang": "tr-tr",
+    "data": {
+        "menu": {
+            "home": "Ana Sayfa",
+            "profile": "Profilim",
+            "settings": "Ayarlar"
+        },
+        "buttons": {
+            "save": "Kaydet",
+            "cancel": "İptal",
+            "delete": "Sil"
+        }
+    }
+}

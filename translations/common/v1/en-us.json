@@ -1,0 +1,17 @@
+{
+    "ns": "common",
+    "version": "v1",
+    "lang": "en-us",
+    "data": {
+        "menu": {
+            "home": "Home",
+            "profile": "My Profile",
+            "settings": "Settings"
+        },
+        "buttons": {
+            "save": "Save",
+            "cancel": "Cancel",
+            "delete": "Delete"
+        }
+    }
+}

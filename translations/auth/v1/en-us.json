@@ -1,0 +1,15 @@
+{
+    "ns": "auth",
+    "version": "v1",
+    "lang": "en-us",
+    "data": {
+        "login": {
+            "title": "Login",
+            "subtitle": "Access your account",
+            "welcome": "Welcome :Name"
+        },
+        "register": {
+            "title": "Register"
+        }
+    }
+}

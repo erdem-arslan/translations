@@ -1,0 +1,8 @@
+{
+  "dictionaries": {
+    "auth": "v1",
+    "common": "v1",
+    "profile": "v1",
+    "response": "v1"
+  }
+}
