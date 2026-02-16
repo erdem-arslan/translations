@@ -10,7 +10,7 @@
         },
         "email_placeholder": {
             "type": "text",
-            "value": "E-posta adresiniz"
+            "value": "E-posta adresiniz :NAME"
         },
         "password_placeholder": {
             "type": "text",
@@ -30,7 +30,7 @@
         },
         "welcome": {
             "type": "text",
-            "value": "Hoşgeldin :NAME"
+            "value": "Hoşgeldin :name"
         }
     },
     "register": {

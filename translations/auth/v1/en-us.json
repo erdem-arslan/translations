@@ -10,7 +10,7 @@
         },
         "email_placeholder": {
             "type": "text",
-            "value": "Your email address"
+            "value": "Your email address :name"
         },
         "password_placeholder": {
             "type": "text",
@@ -30,7 +30,7 @@
         },
         "welcome": {
             "type": "text",
-            "value": "Welcome :Name"
+            "value": "Welcome :NAME"
         }
     },
     "register": {

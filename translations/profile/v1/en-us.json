@@ -38,7 +38,7 @@
         },
         "email_alert": {
             "type": "text",
-            "value": "Enable email notifications"
+            "value": "Enable email notifications :"
         },
         "sms_alert": {
             "type": "text",
