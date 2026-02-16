@@ -30,7 +30,7 @@
         },
         "welcome": {
             "type": "text",
-            "value": "Hoşgeldin :Name"
+            "value": "Hoşgeldin :NAME"
         }
     },
     "register": {
