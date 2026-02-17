@@ -1,0 +1,68 @@
+{
+    "login": {
+        "title": {
+            "type": "text",
+            "value": "Giriş Yapppppppppppp"
+        },
+        "subtitle": {
+            "type": "text",
+            "value": "Devam etmek için hesabınıza erişinnnnnnnnnn"
+        },
+        "email_placeholder": {
+            "type": "text",
+            "value": "E-posta adresinizzzzzzzzzz"
+        },
+        "password_placeholder": {
+            "type": "text",
+            "value": "Şifrenizzzzzzz"
+        },
+        "forgot_password": {
+            "type": "text",
+            "value": "Şifremi Unuttummmmmmmmm"
+        },
+        "submit": {
+            "type": "text",
+            "value": "Giriş Yapppppppppppp"
+        },
+        "no_account": {
+            "type": "text",
+            "value": "Hesabınız yok mu? Kayıt Olunnnnnnnnnn"
+        },
+        "welcome": {
+            "type": "text",
+            "value": "Hoşgeldinnnnnnnnnnn :name"
+        }
+    },
+    "register": {
+        "title": {
+            "type": "text",
+            "value": "Yeni Hesap Oluşturrrrrrrrrrrrrr"
+        },
+        "subtitle": {
+            "type": "text",
+            "value": "Hızlı ve kolay kayıttttttttttttt"
+        },
+        "submit": {
+            "type": "text",
+            "value": "Kayıt Ollllllllll"
+        },
+        "terms": {
+            "type": "text",
+            "value": "Kayıt olarak Hizmet Şartlarını kabul etmiş olursunuzzzzzzzzzzzzzzz."
+        }
+    },
+    "errors": {
+        "invalid_email": {
+            "type": "text",
+            "value": "Geçersiz e-posta adresi."
+        },
+        "password_short": {
+            "type": "text",
+            "value": "Şifre en az 6 karakter olmalıdır."
+        },
+        "user_not_found": {
+            "type": "text",
+            "value": "Böyle bir kullanıcı bulunamadı."
+        }
+    }
+}
