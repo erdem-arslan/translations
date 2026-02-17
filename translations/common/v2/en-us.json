@@ -1,0 +1,72 @@
+{
+    "menu": {
+        "home": {
+            "type": "text",
+            "value": "Home"
+        },
+        "products": {
+            "type": "text",
+            "value": "Products"
+        },
+        "pricing": {
+            "type": "text",
+            "value": "Pricing"
+        },
+        "contact": {
+            "type": "text",
+            "value": "Contact"
+        },
+        "profile": {
+            "type": "text",
+            "value": "Profile"
+        },
+        "settings": {
+            "type": "text",
+            "value": "Settings"
+        }
+    },
+    "buttons": {
+        "save": {
+            "type": "text",
+            "value": "Save"
+        },
+        "cancel": {
+            "type": "text",
+            "value": "Cancel"
+        },
+        "delete": {
+            "type": "text",
+            "value": "Delete"
+        },
+        "edit": {
+            "type": "text",
+            "value": "Edit"
+        },
+        "confirm": {
+            "type": "text",
+            "value": "Confirm"
+        },
+        "back": {
+            "type": "text",
+            "value": "Go Back"
+        }
+    },
+    "status": {
+        "loading": {
+            "type": "text",
+            "value": "Loading..."
+        },
+        "success": {
+            "type": "text",
+            "value": "Success"
+        },
+        "error": {
+            "type": "text",
+            "value": "Error"
+        },
+        "empty": {
+            "type": "text",
+            "value": "No data found."
+        }
+    }
+}

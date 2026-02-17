@@ -1,0 +1,72 @@
+{
+    "menu": {
+        "home": {
+            "type": "text",
+            "value": "Ana Sayfa"
+        },
+        "products": {
+            "type": "text",
+            "value": "Ürünler"
+        },
+        "pricing": {
+            "type": "text",
+            "value": "Fiyatlandırma"
+        },
+        "contact": {
+            "type": "text",
+            "value": "İletişim"
+        },
+        "profile": {
+            "type": "text",
+            "value": "Profilim"
+        },
+        "settings": {
+            "type": "text",
+            "value": "Ayarlar"
+        }
+    },
+    "buttons": {
+        "save": {
+            "type": "text",
+            "value": "Kaydet"
+        },
+        "cancel": {
+            "type": "text",
+            "value": "İptal"
+        },
+        "delete": {
+            "type": "text",
+            "value": "Sil"
+        },
+        "edit": {
+            "type": "text",
+            "value": "Düzenle"
+        },
+        "confirm": {
+            "type": "text",
+            "value": "Onayla"
+        },
+        "back": {
+            "type": "text",
+            "value": "Geri Dön"
+        }
+    },
+    "status": {
+        "loading": {
+            "type": "text",
+            "value": "Yükleniyor..."
+        },
+        "success": {
+            "type": "text",
+            "value": "Başarılı"
+        },
+        "error": {
+            "type": "text",
+            "value": "Hata"
+        },
+        "empty": {
+            "type": "text",
+            "value": "Veri bulunamadı."
+        }
+    }
+}
