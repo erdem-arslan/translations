@@ -10,7 +10,7 @@
         },
         "email_placeholder": {
             "type": "text",
-            "value": "E-posta adresiniz :NAME"
+            "value": "E-posta adresiniz"
         },
         "password_placeholder": {
             "type": "text",

@@ -10,7 +10,7 @@
         },
         "email_placeholder": {
             "type": "text",
-            "value": "Your email address :name"
+            "value": "Your email address"
         },
         "password_placeholder": {
             "type": "text",
