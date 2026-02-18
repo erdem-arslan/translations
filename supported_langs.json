@@ -1,6 +1,20 @@
 {
   "supported_langs": {
-    "Turkish": "tr-tr",
-    "English": "en-us"
+    "Turkish": {
+      "code": "tr-tr",
+      "dir": "ltr"
+    },
+    "English": {
+      "code": "en-us",
+      "dir": "ltr"
+    },
+    "German": {
+      "code": "gr-gr",
+      "dir": "ltr"
+    },
+    "Arabic": {
+      "code": "ar-sa",
+      "dir": "rtl"
+    }
   }
 }
