@@ -1,0 +1,14 @@
+{
+    "success": {
+        "generic": {
+            "type": "text",
+            "value": "İşlem başarılı."
+        }
+    },
+    "error": {
+        "generic": {
+            "type": "text",
+            "value": "Bir hata oluştu."
+        }
+    }
+}

@@ -2,35 +2,35 @@
     "login": {
         "title": {
             "type": "text",
-            "value": "Loginnnnnnnnnnnn"
+            "value": "Login"
         },
         "subtitle": {
             "type": "text",
-            "value": "Access your account to continueeeeeeeeee"
+            "value": "Access your account to continue"
         },
         "email_placeholder": {
             "type": "text",
-            "value": "Your email addressssssssssss"
+            "value": "Your email address"
         },
         "password_placeholder": {
             "type": "text",
-            "value": "Your passwordddddddddddd"
+            "value": "Your password"
         },
         "forgot_password": {
             "type": "text",
-            "value": "Forgot Passworddddddddddd?"
+            "value": "Forgot Password?"
         },
         "submit": {
             "type": "text",
-            "value": "Sign Innnnnnnnnnnnnn"
+            "value": "Sign In"
         },
         "no_account": {
             "type": "text",
-            "value": "Don't have an account? Sign Upppppppppppp"
+            "value": "Don't have an account? Sign Up"
         },
         "welcome": {
             "type": "text",
-            "value": "Welcomeeeeeeeeeeeee :NAME"
+            "value": "Welcome :NAME"
         }
     },
     "register": {

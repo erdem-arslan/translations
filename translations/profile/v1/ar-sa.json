@@ -1,0 +1,48 @@
+{
+    "header": {
+        "title": {
+            "type": "text",
+            "value": "Profil Ayarları"
+        },
+        "desc": {
+            "type": "text",
+            "value": "Kişisel bilgilerinizi buradan yönetebilirsiniz."
+        }
+    },
+    "labels": {
+        "username": {
+            "type": "text",
+            "value": "Kullanıcı Adı"
+        },
+        "fullname": {
+            "type": "text",
+            "value": "Ad Soyad"
+        },
+        "bio": {
+            "type": "text",
+            "value": "Hakkımda"
+        },
+        "language": {
+            "type": "text",
+            "value": "Dil Tercihi"
+        },
+        "theme": {
+            "type": "text",
+            "value": "Tema"
+        }
+    },
+    "notifications": {
+        "title": {
+            "type": "text",
+            "value": "Bildirimler"
+        },
+        "email_alert": {
+            "type": "text",
+            "value": "E-posta bildirimlerini aç"
+        },
+        "sms_alert": {
+            "type": "text",
+            "value": "SMS bildirimlerini aç"
+        }
+    }
+}

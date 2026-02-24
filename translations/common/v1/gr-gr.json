@@ -2,71 +2,71 @@
     "menu": {
         "home": {
             "type": "text",
-            "value": "Home"
+            "value": "Ana Sayfa"
         },
         "products": {
             "type": "text",
-            "value": "Products"
+            "value": "Ürünler"
         },
         "pricing": {
             "type": "text",
-            "value": "Pricing"
+            "value": "Fiyatlandırma"
         },
         "contact": {
             "type": "text",
-            "value": "Contact"
+            "value": "İletişim"
         },
         "profile": {
             "type": "text",
-            "value": "Profile"
+            "value": "Profilim"
         },
         "settings": {
             "type": "text",
-            "value": "Settings"
+            "value": "Ayarlar"
         }
     },
     "buttons": {
         "save": {
             "type": "text",
-            "value": "Save"
+            "value": "Kaydet"
         },
         "cancel": {
             "type": "text",
-            "value": "Cancel"
+            "value": "İptal"
         },
         "delete": {
             "type": "text",
-            "value": "Delete"
+            "value": "Sil"
         },
         "edit": {
             "type": "text",
-            "value": "Edit"
+            "value": "Düzenle"
         },
         "confirm": {
             "type": "text",
-            "value": "Confirm"
+            "value": "Onayla"
         },
         "back": {
             "type": "text",
-            "value": "Go Back"
+            "value": "Geri Dön"
         }
     },
     "status": {
         "loading": {
             "type": "text",
-            "value": "Loading..."
+            "value": "Yükleniyor..."
         },
         "success": {
             "type": "text",
-            "value": "Success"
+            "value": "Başarılı"
         },
         "error": {
             "type": "text",
-            "value": "Error"
+            "value": "Hata"
         },
         "empty": {
             "type": "text",
-            "value": "No data found."
+            "value": "Veri bulunamadı."
         }
     }
 }
