@@ -10,5 +10,19 @@
             "type": "text",
             "value": "Bir hata oluştu."
         }
+    },
+    "account": {
+        "suspended": {
+            "_type": "audience_text",
+            "_variants": [
+                "individual",
+                "corporate"
+            ],
+            "_params": [
+                "remaining_time"
+            ],
+            "individual": "Hesabın şüpheli işlem nedeniyle geçici olarak askıya alındı. :remaining_time hesabına yeniden erişim sağlayabilirsin.",
+            "corporate": "Hesabınız şüpheli işlem nedeniyle geçici olarak askıya alınmıştır. :remaining_time hesabınıza yeniden erişim sağlayabilirsiniz."
+        }
     }
 }

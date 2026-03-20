@@ -10,5 +10,19 @@
             "type": "text",
             "value": "An error occurred."
         }
+    },
+    "account": {
+        "suspended": {
+            "_type": "audience_text",
+            "_variants": [
+                "individual",
+                "corporate"
+            ],
+            "_params": [
+                "remaining_time"
+            ],
+            "individual": "Your account has been temporarily suspended due to suspicious activity. You can regain access in :remaining_time.",
+            "corporate": "Your company account has been temporarily suspended due to suspicious activity. Access will be restored in :remaining_time."
+        }
     }
 }
