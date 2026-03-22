@@ -24,5 +24,51 @@
             "individual": "Your account has been temporarily suspended due to suspicious activity. You can regain access in :remaining_time.",
             "corporate": "Your company account has been temporarily suspended due to suspicious activity. Access will be restored in :remaining_time."
         }
+    },
+    "user": {
+        "gender": {
+            "_type": "enum",
+            "_values": [
+                "male",
+                "female",
+                "unspecified"
+            ],
+            "_fields": [
+                "label"
+            ],
+            "male": {
+                "label": "Male"
+            },
+            "female": {
+                "label": "Female"
+            },
+            "unspecified": {
+                "label": "Prefer not to say"
+            }
+        },
+        "session_verification_method": {
+            "_type": "enum",
+            "_values": [
+                "otp_only",
+                "password_only",
+                "otp_and_password"
+            ],
+            "_fields": [
+                "title",
+                "description"
+            ],
+            "otp_only": {
+                "title": "OTP Only",
+                "description": "Verification is done using a one-time password."
+            },
+            "password_only": {
+                "title": "Password Only",
+                "description": "Login is done using only your email password."
+            },
+            "otp_and_password": {
+                "title": "Password & OTP",
+                "description": "Both email password and one-time password are required."
+            }
+        }
     }
 }

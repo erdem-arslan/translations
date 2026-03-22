@@ -24,5 +24,51 @@
             "individual": "Hesabın şüpheli işlem nedeniyle geçici olarak askıya alındı. :remaining_time hesabına yeniden erişim sağlayabilirsin.",
             "corporate": "Hesabınız şüpheli işlem nedeniyle geçici olarak askıya alınmıştır. :remaining_time hesabınıza yeniden erişim sağlayabilirsiniz."
         }
+    },
+    "user": {
+        "gender": {
+            "_type": "enum",
+            "_values": [
+                "male",
+                "female",
+                "unspecified"
+            ],
+            "_fields": [
+                "label"
+            ],
+            "male": {
+                "label": "Erkek"
+            },
+            "female": {
+                "label": "Kadın"
+            },
+            "unspecified": {
+                "label": "Belirtmek istemiyorum"
+            }
+        },
+        "session_verification_method": {
+            "_type": "enum",
+            "_values": [
+                "otp_only",
+                "password_only",
+                "otp_and_password"
+            ],
+            "_fields": [
+                "title",
+                "description"
+            ],
+            "otp_only": {
+                "title": "Yalnızca OTP",
+                "description": "Tek kullanımlık şifre ile doğrulama yapılır."
+            },
+            "password_only": {
+                "title": "Yalnızca Şifre",
+                "description": "Sadece e-posta şifresi ile giriş yapılır."
+            },
+            "otp_and_password": {
+                "title": "Şifre ve OTP",
+                "description": "E-posta şifresi ve tek kullanımlık şifre birlikte kullanılır."
+            }
+        }
     }
 }
