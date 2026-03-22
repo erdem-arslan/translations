@@ -70,5 +70,36 @@
                 "description": "Both email password and one-time password are required."
             }
         }
+    },
+    "greet": {
+        "_type": "rich_text",
+        "_components": [
+            "mark"
+        ],
+        "_params": [
+            "age"
+        ],
+        "_nodes": [
+            {
+                "_type": "text",
+                "value": "Hello, I am "
+            },
+            {
+                "_type": "mark",
+                "_children": [
+                    {
+                        "_type": "text",
+                        "_params": [
+                            "age"
+                        ],
+                        "value": ":age"
+                    }
+                ]
+            },
+            {
+                "_type": "text",
+                "value": " years old"
+            }
+        ]
     }
 }

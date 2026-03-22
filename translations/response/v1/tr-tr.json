@@ -70,5 +70,36 @@
                 "description": "E-posta şifresi ve tek kullanımlık şifre birlikte kullanılır."
             }
         }
+    },
+    "greet": {
+        "_type": "rich_text",
+        "_components": [
+            "mark"
+        ],
+        "_params": [
+            "age"
+        ],
+        "_nodes": [
+            {
+                "_type": "text",
+                "value": "Merhaba ben "
+            },
+            {
+                "_type": "mark",
+                "_children": [
+                    {
+                        "_type": "text",
+                        "_params": [
+                            "age"
+                        ],
+                        "value": ":age"
+                    }
+                ]
+            },
+            {
+                "_type": "text",
+                "value": " yaşındayım"
+            }
+        ]
     }
 }
