@@ -1,105 +1,119 @@
 {
-    "success": {
-        "generic": {
-            "type": "text",
-            "value": "İşlem başarılı."
-        }
-    },
-    "error": {
-        "generic": {
-            "type": "text",
-            "value": "Bir hata oluştu."
-        }
-    },
-    "account": {
-        "suspended": {
+    "auth": {
+        "invalid_credentials": {
+            "_type": "text",
+            "_params": null,
+            "value": "Giriş bilgileriniz hatalı. Lütfen tekrar deneyiniz."
+        },
+        "already_exist": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "Bu :field başka bir hesap tarafından kullanılmaktadır."
+        },
+        "not_exist": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "Girilen :field sistemde kayıtlı değildir."
+        },
+        "same_as_current": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "Güncellemek istediğiniz :field mevcut değeriniz ile aynıdır."
+        },
+        "already_verified": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "Bu :field zaten doğrulanmıştır."
+        },
+        "user_suspended_until": {
             "_type": "audience_text",
             "_variants": [
                 "individual",
                 "corporate"
             ],
             "_params": [
+                "field",
                 "remaining_time"
             ],
-            "individual": "Hesabın şüpheli işlem nedeniyle geçici olarak askıya alındı. :remaining_time hesabına yeniden erişim sağlayabilirsin.",
-            "corporate": "Hesabınız şüpheli işlem nedeniyle geçici olarak askıya alınmıştır. :remaining_time hesabınıza yeniden erişim sağlayabilirsiniz."
-        }
-    },
-    "user": {
-        "gender": {
-            "_type": "enum",
-            "_values": [
-                "male",
-                "female",
-                "unspecified"
-            ],
-            "_fields": [
-                "label"
-            ],
-            "male": {
-                "label": "Erkek"
-            },
-            "female": {
-                "label": "Kadın"
-            },
-            "unspecified": {
-                "label": "Belirtmek istemiyorum"
-            }
+            "individual": "Hesabın askıya alındı. :field kontrol et. :remaining_time sonra tekrar dene.",
+            "corporate": "Hesabınız askıya alınmıştır. :field kontrol ediniz. :remaining_time sonra tekrar deneyiniz."
         },
-        "session_verification_method": {
+        "password_in_history": {
+            "_type": "audience_text",
+            "_variants": [
+                "individual",
+                "corporate"
+            ],
+            "_params": [
+                "count"
+            ],
+            "individual": "Yeni şifren son :count şifrenden farklı olmalıdır.",
+            "corporate": "Yeni şifreniz son :count şifrenizden farklı olmalıdır."
+        },
+        "account_status": {
             "_type": "enum",
             "_values": [
-                "otp_only",
-                "password_only",
-                "otp_and_password"
+                "active",
+                "inactive",
+                "suspended"
             ],
             "_fields": [
-                "title",
+                "label",
                 "description"
             ],
-            "otp_only": {
-                "title": "Yalnızca OTP",
-                "description": "Tek kullanımlık şifre ile doğrulama yapılır."
+            "active": {
+                "label": "Aktif",
+                "description": "Hesap aktif ve kullanılabilir durumda."
             },
-            "password_only": {
-                "title": "Yalnızca Şifre",
-                "description": "Sadece e-posta şifresi ile giriş yapılır."
+            "inactive": {
+                "label": "Pasif",
+                "description": "Hesap henüz etkinleştirilmemiş."
             },
-            "otp_and_password": {
-                "title": "Şifre ve OTP",
-                "description": "E-posta şifresi ve tek kullanımlık şifre birlikte kullanılır."
+            "suspended": {
+                "label": "Askıya alındı",
+                "description": "Hesap geçici olarak askıya alınmış."
             }
+        },
+        "verify_prompt": {
+            "_type": "rich_text",
+            "_components": [
+                "Link"
+            ],
+            "_params": [
+                "field"
+            ],
+            "_nodes": [
+                {
+                    "_type": "text",
+                    "value": "Lütfen :field doğrulamak için ",
+                    "_params": [
+                        "field"
+                    ]
+                },
+                {
+                    "_type": "Link",
+                    "_children": [
+                        {
+                            "_type": "text",
+                            "value": "buraya tıklayın",
+                            "_params": []
+                        }
+                    ]
+                },
+                {
+                    "_type": "text",
+                    "value": ".",
+                    "_params": []
+                }
+            ]
         }
-    },
-    "greet": {
-        "_type": "rich_text",
-        "_components": [
-            "mark"
-        ],
-        "_params": [
-            "age"
-        ],
-        "_nodes": [
-            {
-                "_type": "text",
-                "value": "Merhaba ben "
-            },
-            {
-                "_type": "mark",
-                "_children": [
-                    {
-                        "_type": "text",
-                        "_params": [
-                            "age"
-                        ],
-                        "value": ":age"
-                    }
-                ]
-            },
-            {
-                "_type": "text",
-                "value": " yaşındayım"
-            }
-        ]
     }
 }

@@ -1,105 +1,119 @@
 {
-    "success": {
-        "generic": {
-            "type": "text",
-            "value": "Operation successful."
-        }
-    },
-    "error": {
-        "generic": {
-            "type": "text",
-            "value": "An error occurred."
-        }
-    },
-    "account": {
-        "suspended": {
+    "auth": {
+        "invalid_credentials": {
+            "_type": "text",
+            "_params": null,
+            "value": "Your login credentials are invalid. Please try again."
+        },
+        "already_exist": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "This :field is already being used by another account."
+        },
+        "not_exist": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "The provided :field is not registered in the system."
+        },
+        "same_as_current": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "The :field you are trying to update is the same as your current value."
+        },
+        "already_verified": {
+            "_type": "text",
+            "_params": [
+                "field"
+            ],
+            "value": "This :field has already been verified."
+        },
+        "user_suspended_until": {
             "_type": "audience_text",
             "_variants": [
                 "individual",
                 "corporate"
             ],
             "_params": [
+                "field",
                 "remaining_time"
             ],
-            "individual": "Your account has been temporarily suspended due to suspicious activity. You can regain access in :remaining_time.",
-            "corporate": "Your company account has been temporarily suspended due to suspicious activity. Access will be restored in :remaining_time."
-        }
-    },
-    "user": {
-        "gender": {
-            "_type": "enum",
-            "_values": [
-                "male",
-                "female",
-                "unspecified"
-            ],
-            "_fields": [
-                "label"
-            ],
-            "male": {
-                "label": "Male"
-            },
-            "female": {
-                "label": "Female"
-            },
-            "unspecified": {
-                "label": "Prefer not to say"
-            }
+            "individual": "Your account has been suspended. Check your :field. Try again after :remaining_time.",
+            "corporate": "Your account has been suspended. Please check your :field. Please try again after :remaining_time."
         },
-        "session_verification_method": {
+        "password_in_history": {
+            "_type": "audience_text",
+            "_variants": [
+                "individual",
+                "corporate"
+            ],
+            "_params": [
+                "count"
+            ],
+            "individual": "Your new password must be different from your last :count passwords.",
+            "corporate": "Your new password must be different from your last :count passwords."
+        },
+        "account_status": {
             "_type": "enum",
             "_values": [
-                "otp_only",
-                "password_only",
-                "otp_and_password"
+                "active",
+                "inactive",
+                "suspended"
             ],
             "_fields": [
-                "title",
+                "label",
                 "description"
             ],
-            "otp_only": {
-                "title": "OTP Only",
-                "description": "Verification is done using a one-time password."
+            "active": {
+                "label": "Active",
+                "description": "The account is active and available for use."
             },
-            "password_only": {
-                "title": "Password Only",
-                "description": "Login is done using only your email password."
+            "inactive": {
+                "label": "Inactive",
+                "description": "The account has not been activated yet."
             },
-            "otp_and_password": {
-                "title": "Password & OTP",
-                "description": "Both email password and one-time password are required."
+            "suspended": {
+                "label": "Suspended",
+                "description": "The account has been temporarily suspended."
             }
+        },
+        "verify_prompt": {
+            "_type": "rich_text",
+            "_components": [
+                "Link"
+            ],
+            "_params": [
+                "field"
+            ],
+            "_nodes": [
+                {
+                    "_type": "text",
+                    "value": "Please click ",
+                    "_params": []
+                },
+                {
+                    "_type": "Link",
+                    "_children": [
+                        {
+                            "_type": "text",
+                            "value": "here",
+                            "_params": []
+                        }
+                    ]
+                },
+                {
+                    "_type": "text",
+                    "value": " to verify your :field.",
+                    "_params": [
+                        "field"
+                    ]
+                }
+            ]
         }
-    },
-    "greet": {
-        "_type": "rich_text",
-        "_components": [
-            "mark"
-        ],
-        "_params": [
-            "age"
-        ],
-        "_nodes": [
-            {
-                "_type": "text",
-                "value": "Hello, I am "
-            },
-            {
-                "_type": "mark",
-                "_children": [
-                    {
-                        "_type": "text",
-                        "_params": [
-                            "age"
-                        ],
-                        "value": ":age"
-                    }
-                ]
-            },
-            {
-                "_type": "text",
-                "value": " years old"
-            }
-        ]
     }
 }

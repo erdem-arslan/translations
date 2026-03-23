@@ -1,0 +1,38 @@
+{
+    "email": {
+        "_type": "attribute",
+        "_variants": [
+            "singular",
+            "plural"
+        ],
+        "singular": "your email address",
+        "plural": "your email addresses"
+    },
+    "password": {
+        "_type": "attribute",
+        "_variants": [
+            "singular",
+            "plural"
+        ],
+        "singular": "your password",
+        "plural": "your passwords"
+    },
+    "phone": {
+        "_type": "attribute",
+        "_variants": [
+            "singular",
+            "plural"
+        ],
+        "singular": "your phone number",
+        "plural": "your phone numbers"
+    },
+    "username": {
+        "_type": "attribute",
+        "_variants": [
+            "singular",
+            "plural"
+        ],
+        "singular": "your username",
+        "plural": "your usernames"
+    }
+}
