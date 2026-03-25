@@ -1,9 +1,9 @@
 {
   "dictionaries": {
-    "auth": "v2",
+    "attribute": "v1",
+    "auth": "v1",
     "common": "v1",
-    "profile": "v1",
-    "response": "v1",
-    "attributes": "v1"
+    "enums": "v1",
+    "form": "v1"
   }
 }

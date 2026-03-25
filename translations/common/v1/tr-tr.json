@@ -1,72 +1,156 @@
 {
-    "menu": {
-        "home": {
-            "type": "text",
-            "value": "Ana Sayfa"
-        },
-        "products": {
-            "type": "text",
-            "value": "Ürünler"
-        },
-        "pricing": {
-            "type": "text",
-            "value": "Fiyatlandırma"
-        },
-        "contact": {
-            "type": "text",
-            "value": "İletişim"
-        },
-        "profile": {
-            "type": "text",
-            "value": "Profilim"
-        },
-        "settings": {
-            "type": "text",
-            "value": "Ayarlar"
-        }
+  "common": {
+    "and": {
+      "_type": "text",
+      "value": "ve"
     },
-    "buttons": {
-        "save": {
-            "type": "text",
-            "value": "Kaydet"
-        },
-        "cancel": {
-            "type": "text",
-            "value": "İptal"
-        },
-        "delete": {
-            "type": "text",
-            "value": "Sil"
-        },
-        "edit": {
-            "type": "text",
-            "value": "Düzenle"
-        },
-        "confirm": {
-            "type": "text",
-            "value": "Onayla"
-        },
-        "back": {
-            "type": "text",
-            "value": "Geri Dön"
-        }
+    "or": {
+      "_type": "text",
+      "value": "veya"
     },
-    "status": {
-        "loading": {
-            "type": "text",
-            "value": "Yükleniyor..."
-        },
-        "success": {
-            "type": "text",
-            "value": "Başarılı"
-        },
-        "error": {
-            "type": "text",
-            "value": "Hata"
-        },
-        "empty": {
-            "type": "text",
-            "value": "Veri bulunamadı."
-        }
+    "not_set": {
+      "_type": "text",
+      "value": "Ayarlanmadı"
+    },
+    "unknown": {
+      "_type": "text",
+      "value": "Bilinmiyor"
     }
+  },
+  "actions": {
+    "edit": {
+      "_type": "text",
+      "value": "Düzenle"
+    },
+    "save": {
+      "_type": "text",
+      "value": "Kaydet"
+    },
+    "cancel": {
+      "_type": "text",
+      "value": "İptal"
+    },
+    "change": {
+      "_type": "text",
+      "value": "Değiştir"
+    },
+    "add": {
+      "_type": "text",
+      "value": "Ekle"
+    },
+    "confirm": {
+      "_type": "text",
+      "value": "Onayla"
+    },
+    "verify": {
+      "_type": "text",
+      "value": "Doğrula"
+    },
+    "filter": {
+      "_type": "text",
+      "value": "Filtreler"
+    },
+    "sort": {
+      "_type": "text",
+      "value": "Sıralama"
+    },
+    "view_invoice": {
+      "_type": "text",
+      "value": "Fatura Görüntüle"
+    },
+    "send_code": {
+      "_type": "text",
+      "value": "Kodu gönder"
+    },
+    "continue": {
+      "_type": "text",
+      "value": "Devam et"
+    },
+    "delete": {
+      "_type": "text",
+      "value": "Sil"
+    },
+    "logout": {
+      "_type": "text",
+      "value": "Çıkış yap"
+    },
+    "login": {
+      "_type": "text",
+      "value": "Giriş yap"
+    },
+    "go_to_panel": {
+      "_type": "text",
+      "value": "Panele devam et"
+    },
+    "resend_code": {
+      "_type": "text",
+      "value": "Yeni kod gönder"
+    },
+    "resend": {
+      "_type": "text",
+      "value": "Tekrar gönderin"
+    },
+    "save_and_delete": {
+      "_type": "text",
+      "value": "Kaydet ve sil"
+    },
+    "save_and_continue": {
+      "_type": "text",
+      "value": "Kaydet ve devam et"
+    },
+    "create_password": {
+      "_type": "text",
+      "value": "Şifre oluştur"
+    },
+    "create_account": {
+      "_type": "text",
+      "value": "Hesap oluştur"
+    },
+    "continue_with": {
+      "_type": "text",
+      "_params": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} ile devam et"
+    },
+    "login_with": {
+      "_type": "text",
+      "_params": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} ile giriş"
+    },
+    "send_password_reset_code": {
+      "_type": "text",
+      "value": "Şifre sıfırlama kodu gönder"
+    },
+    "verify_and_continue": {
+      "_type": "text",
+      "value": "Doğrula ve devam et"
+    },
+    "trouble_accessing_account": {
+      "_type": "text",
+      "value": "Hesabınıza erişemiyor musunuz?"
+    },
+    "use_other_recovery_method": {
+      "_type": "text",
+      "value": "Diğer kurtarma seçenekleri ile devam et"
+    },
+    "login_to_account": {
+      "_type": "text",
+      "value": "Hesaba giriş yap"
+    },
+    "set_up_later": {
+      "_type": "text",
+      "value": "Daha sonra ayarlayacağım"
+    },
+    "delete_account": {
+      "_type": "text",
+      "value": "Hesabımı sil"
+    },
+    "change_account": {
+      "_type": "text",
+      "value": "Farklı bir hesap ile giriş yap"
+    }
+  }
 }

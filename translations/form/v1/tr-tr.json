@@ -1,0 +1,928 @@
+{
+  "form": {
+    "password": {
+      "rule_message": {
+        "_type": "text",
+        "value": "Güçlü bir şifre oluşturun. Şifrenizin en az 8 karakter, büyük harf, küçük harf ve rakam içermesine dikkat edin."
+      }
+    },
+    "otp": {
+      "timeout": {
+        "_type": "rich_text",
+        "_components": [
+          "countdown"
+        ],
+        "_params": [
+          "timeout"
+        ],
+        "_nodes": [
+          {
+            "_type": "text",
+            "value": "Kalan süre "
+          },
+          {
+            "_type": "countdown",
+            "_children": [
+              {
+                "_type": "text",
+                "_params": [
+                  "timeout"
+                ],
+                "value": "{timeout}"
+              }
+            ]
+          },
+          {
+            "_type": "text",
+            "value": ". Süre tamamlandığında tekrar doğrulama kodu isteyebilirsiniz."
+          }
+        ]
+      },
+      "expired": {
+        "_type": "text",
+        "value": "Belirtilen süre içinde doğrulama kodu girilmediği için işlem tamamlanamadı."
+      }
+    },
+    "advertising_permit": {
+      "_type": "text",
+      "value": "Telefon numaramı kampanya ve duyurular için kullanmak istiyorum."
+    },
+    "password_expire_check": {
+      "_type": "text",
+      "value": "Her 6 ayda bir şifre güncellememi zorunlu kıl."
+    },
+    "deletion_reason_confirm": {
+      "_type": "text",
+      "_params": [
+        "accountNumber"
+      ],
+      "value": "{accountNumber::ucf} numaralı hesabımı ve tüm verilerimi kalıcı olarak silmek istediğimi onaylıyorum."
+    }
+  },
+  "labels": {
+    "default": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}"
+    }
+  },
+  "placeholders": {
+    "input": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} girin"
+    },
+    "select": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} seçin"
+    },
+    "format": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}"
+    },
+    "otp": {
+      "_type": "text",
+      "_params": [
+        "len"
+      ],
+      "value": "{len} haneli kodu girin"
+    },
+    "deletion_reason_details": {
+      "_type": "text",
+      "value": "Dilerseniz silme nedeninizi detaylandırabilirsiniz."
+    }
+  },
+  "errors": {
+    "required": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} alanı zorunludur."
+    },
+    "required_array_keys": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} alanı şu anahtarları içermelidir: {values}."
+    },
+    "required_if": {
+      "_type": "text",
+      "_params": [
+        "value"
+      ],
+      "_attributes": [
+        "attribute",
+        "other"
+      ],
+      "value": "{other::ucf} {value} olduğunda {attribute} alanı zorunludur."
+    },
+    "required_unless": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute",
+        "other"
+      ],
+      "value": "{other::ucf} {values} içinde değilse {attribute} alanı zorunludur."
+    },
+    "required_with": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{values::ucf} mevcut olduğunda {attribute} alanı zorunludur."
+    },
+    "required_with_all": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{values::ucf} mevcut olduğunda {attribute} alanı zorunludur."
+    },
+    "required_without": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{values::ucf} mevcut olmadığında {attribute} alanı zorunludur."
+    },
+    "required_without_all": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{values::ucf} hiçbirisi mevcut olmadığında {attribute} alanı zorunludur."
+    },
+    "filled": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} alanı doldurulmalıdır."
+    },
+    "same": {
+      "_type": "text",
+      "_attributes": [
+        "attribute",
+        "other"
+      ],
+      "value": "{attribute::ucf} ile {other} eşleşmelidir."
+    },
+    "file": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} bir dosya olmalıdır."
+    },
+    "image": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} bir resim olmalıdır."
+    },
+    "dimensions": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçersiz resim boyutlarına sahip."
+    },
+    "mime_types": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} şu türde bir dosya olmalıdır: {values}."
+    },
+    "mimes": {
+      "_type": "text",
+      "_params": [
+        "values"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} şu türde bir dosya olmalıdır: {values}."
+    },
+    "string": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} bir metin olmalıdır."
+    },
+    "boolean": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} alanı doğru veya yanlış olmalıdır."
+    },
+    "numeric": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} bir sayı olmalıdır."
+    },
+    "integer": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} bir tam sayı olmalıdır."
+    },
+    "numeric_string": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} sadece rakamlardan oluşmalıdır."
+    },
+    "array": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} bir dizi olmalıdır."
+    },
+    "uuid": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir UUID olmalıdır."
+    },
+    "ipv4": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir IPv4 adresi olmalıdır."
+    },
+    "ipv6": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir IPv6 adresi olmalıdır."
+    },
+    "ip": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir IP adresi olmalıdır."
+    },
+    "mac_address": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir MAC adresi olmalıdır."
+    },
+    "alpha": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} yalnızca harflerden oluşmalıdır."
+    },
+    "alpha_num": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} yalnızca harf ve rakam içerebilir."
+    },
+    "alpha_dash": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} yalnızca harfler, rakamlar, tire ve alt çizgi içerebilir."
+    },
+    "email": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir e-posta adresi olmalıdır."
+    },
+    "json": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir JSON dizgisi olmalıdır."
+    },
+    "url": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir URL olmalıdır."
+    },
+    "timezone": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir saat dilimi olmalıdır."
+    },
+    "date": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} geçerli bir tarih değildir."
+    },
+    "after": {
+      "_type": "text",
+      "_params": [
+        "date"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}, {date} tarihinden sonraki bir tarih olmalıdır."
+    },
+    "after_or_equal": {
+      "_type": "text",
+      "_params": [
+        "date"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}, {date} tarihine eşit veya sonraki bir tarih olmalıdır."
+    },
+    "before": {
+      "_type": "text",
+      "_params": [
+        "date"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}, {date} tarihinden önceki bir tarih olmalıdır."
+    },
+    "before_or_equal": {
+      "_type": "text",
+      "_params": [
+        "date"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}, {date} tarihine eşit veya önceki bir tarih olmalıdır."
+    },
+    "date_equals": {
+      "_type": "text",
+      "_params": [
+        "date"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}, {date} tarihine eşit bir tarih olmalıdır."
+    },
+    "date_format": {
+      "_type": "text",
+      "_params": [
+        "format"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf}, {format} formatıyla eşleşmiyor."
+    },
+    "gt": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} değerinden büyük olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} kilobayttan büyük olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} karakterden fazla olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} öğeden fazla içermelidir."
+      }
+    },
+    "gte": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} değerine eşit veya büyük olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} kilobayta eşit veya büyük olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} karaktere eşit veya fazla olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} öğe veya daha fazlasını içermelidir."
+      }
+    },
+    "lt": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} değerinden küçük olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} kilobayttan küçük olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} karakterden az olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} öğeden az içermelidir."
+      }
+    },
+    "lte": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} değerine eşit veya küçük olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} kilobayta eşit veya küçük olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} karaktere eşit veya az olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "value"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {value} öğeden fazlasını içermemelidir."
+      }
+    },
+    "min": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "min"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az {min} olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "min"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az {min} kilobayt olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "min"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az {min} karakter olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "min"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az {min} öğe içermelidir."
+      }
+    },
+    "max": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {max} değerinden büyük olamaz."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {max} kilobayttan büyük olamaz."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {max} karakterden fazla olamaz."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {max} öğeden fazla içeremez."
+      }
+    },
+    "size": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "size"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} {size} olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "size"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} {size} kilobayt olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "size"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} {size} karakter olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "size"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} {size} öğe içermelidir."
+      }
+    },
+    "between": {
+      "numeric": {
+        "_type": "text",
+        "_params": [
+          "min",
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {min} ile {max} arasında bir değer olmalıdır."
+      },
+      "file": {
+        "_type": "text",
+        "_params": [
+          "min",
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {min} ile {max} kilobayt arasında olmalıdır."
+      },
+      "string": {
+        "_type": "text",
+        "_params": [
+          "min",
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {min} ile {max} karakter arasında olmalıdır."
+      },
+      "array": {
+        "_type": "text",
+        "_params": [
+          "min",
+          "max"
+        ],
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf}, {min} ile {max} öğe arasında olmalıdır."
+      }
+    },
+    "digits": {
+      "_type": "text",
+      "_params": [
+        "digits"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} {digits} basamaklı olmalıdır."
+    },
+    "digits_between": {
+      "_type": "text",
+      "_params": [
+        "min",
+        "max"
+      ],
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} {min} ile {max} basamak arasında olmalıdır."
+    },
+    "password": {
+      "letters": {
+        "_type": "text",
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az bir harf içermelidir."
+      },
+      "mixed": {
+        "_type": "text",
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az bir büyük ve bir küçük harf içermelidir."
+      },
+      "numbers": {
+        "_type": "text",
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az bir sayı içermelidir."
+      },
+      "symbols": {
+        "_type": "text",
+        "_attributes": [
+          "attribute"
+        ],
+        "value": "{attribute::ucf} en az bir özel karakter içermelidir."
+      }
+    },
+    "confirmed": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} onayı eşleşmiyor."
+    },
+    "different": {
+      "_type": "text",
+      "_attributes": [
+        "attribute",
+        "other"
+      ],
+      "value": "{attribute::ucf} ile {other} farklı olmalıdır."
+    },
+    "in": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "Seçilen {attribute} geçersiz."
+    },
+    "not_in": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "Seçilen {attribute} geçersiz."
+    },
+    "distinct": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} alanında tekrar eden bir değer var."
+    },
+    "lower_case": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} yalnızca küçük harflerden oluşmalıdır."
+    },
+    "upper_case": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} yalnızca büyük harflerden oluşmalıdır."
+    },
+    "ucfirst": {
+      "_type": "text",
+      "_attributes": [
+        "attribute"
+      ],
+      "value": "{attribute::ucf} içindeki her kelimenin ilk harfi büyük olmalıdır."
+    },
+    "custom": {
+      "phone": {
+        "valid": {
+          "_type": "text",
+          "_attributes": [
+            "attribute"
+          ],
+          "value": "{attribute::ucf} geçerli bir telefon numarası olmalıdır."
+        },
+        "e164_format": {
+          "_type": "text",
+          "_attributes": [
+            "attribute"
+          ],
+          "value": "{attribute::ucf} geçerli bir E.164 telefon numarası formatında olmalıdır."
+        },
+        "country": {
+          "_type": "text",
+          "_params": [
+            "country"
+          ],
+          "_attributes": [
+            "attribute"
+          ],
+          "value": "{attribute::ucf}, {country} için geçerli bir telefon numarası olmalıdır."
+        },
+        "turkish": {
+          "_type": "text",
+          "_attributes": [
+            "attribute"
+          ],
+          "value": "{attribute::ucf} geçerli bir Türkiye telefon numarası olmalıdır."
+        },
+        "min_digits": {
+          "_type": "text",
+          "_params": [
+            "min"
+          ],
+          "_attributes": [
+            "attribute"
+          ],
+          "value": "{attribute::ucf} en az {min} basamak içermelidir."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "enums": {
+    "gender": {
+      "_type": "enum",
+      "_values": [
+        "male",
+        "female",
+        "unspecified"
+      ],
+      "_fields": [
+        "label"
+      ],
+      "male": {
+        "label": "Erkek"
+      },
+      "female": {
+        "label": "Kadın"
+      },
+      "unspecified": {
+        "label": "Belirtmek istemiyorum"
+      }
+    },
+    "account_type": {
+      "_type": "enum",
+      "_values": [
+        "individual",
+        "corporate",
+        "key_account",
+        "key_account_vip"
+      ],
+      "_fields": [
+        "label"
+      ],
+      "individual": {
+        "label": "Bireysel"
+      },
+      "corporate": {
+        "label": "Kurumsal"
+      },
+      "key_account": {
+        "label": "Kilit Müşteri"
+      },
+      "key_account_vip": {
+        "label": "Kilit Müşteri VIP"
+      }
+    },
+    "contacts": {
+      "_type": "enum",
+      "_values": [
+        "contact",
+        "payment",
+        "technical"
+      ],
+      "_fields": [
+        "label"
+      ],
+      "contact": {
+        "label": "İletişim"
+      },
+      "payment": {
+        "label": "Ödeme"
+      },
+      "technical": {
+        "label": "Teknik"
+      }
+    },
+    "deletion_reason": {
+      "_type": "enum",
+      "_values": [
+        "privacy_concerns",
+        "not_useful",
+        "too_many_emails",
+        "created_duplicate",
+        "other"
+      ],
+      "_fields": [
+        "label"
+      ],
+      "privacy_concerns": {
+        "label": "Gizlilik endişeleri"
+      },
+      "not_useful": {
+        "label": "Hesabı artık kullanmıyorum"
+      },
+      "too_many_emails": {
+        "label": "Çok fazla e-posta alıyorum"
+      },
+      "created_duplicate": {
+        "label": "Çift hesap oluşturdum"
+      },
+      "other": {
+        "label": "Diğer"
+      }
+    },
+    "login_method": {
+      "_type": "enum",
+      "_values": [
+        "email",
+        "phone",
+        "qr",
+        "github",
+        "google"
+      ],
+      "_fields": [
+        "label",
+        "description"
+      ],
+      "email": {
+        "label": "E-posta",
+        "description": "E-posta adresinizi kullanarak hesabınıza giriş yapabilirsiniz."
+      },
+      "phone": {
+        "label": "Telefon",
+        "description": "Telefon numaranızı kullanarak hesabınıza giriş yapabilirsiniz."
+      },
+      "qr": {
+        "label": "QR kod",
+        "description": "Mobil cihazınızla QR kodu okutarak hızlıca giriş yapabilirsiniz."
+      },
+      "github": {
+        "label": "GitHub",
+        "description": "GitHub hesabınızı kullanarak hızlıca giriş yapabilirsiniz."
+      },
+      "google": {
+        "label": "Google",
+        "description": "Google hesabınızı kullanarak hızlıca giriş yapabilirsiniz."
+      }
+    },
+    "session_verification_method": {
+      "_type": "enum",
+      "_values": [
+        "otp_only",
+        "password_only",
+        "otp_and_password"
+      ],
+      "_fields": [
+        "label",
+        "description"
+      ],
+      "otp_only": {
+        "label": "Yalnızca OTP (tek kullanımlık kod)",
+        "description": "Tek kullanımlık doğrulama kodu ile girin. Hızlı ve pratik."
+      },
+      "password_only": {
+        "label": "Yalnızca Şifre",
+        "description": "Sadece e-posta ve şifrenizle güvenli şekilde giriş yapın."
+      },
+      "otp_and_password": {
+        "label": "Şifre ve OTP (tek kullanımlık kod)",
+        "description": "Hem şifre hem gelen kod ile ekstra koruma sağlayın."
+      }
+    },
+    "month": {
+      "_type": "enum",
+      "_values": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december"
+      ],
+      "_fields": [
+        "label",
+        "short"
+      ],
+      "january": {
+        "label": "Ocak",
+        "short": "Oca"
+      },
+      "february": {
+        "label": "Şubat",
+        "short": "Şub"
+      },
+      "march": {
+        "label": "Mart",
+        "short": "Mar"
+      },
+      "april": {
+        "label": "Nisan",
+        "short": "Nis"
+      },
+      "may": {
+        "label": "Mayıs",
+        "short": "May"
+      },
+      "june": {
+        "label": "Haziran",
+        "short": "Haz"
+      },
+      "july": {
+        "label": "Temmuz",
+        "short": "Tem"
+      },
+      "august": {
+        "label": "Ağustos",
+        "short": "Ağu"
+      },
+      "september": {
+        "label": "Eylül",
+        "short": "Eyl"
+      },
+      "october": {
+        "label": "Ekim",
+        "short": "Eki"
+      },
+      "november": {
+        "label": "Kasım",
+        "short": "Kas"
+      },
+      "december": {
+        "label": "Aralık",
+        "short": "Ara"
+      }
+    },
+    "weekday": {
+      "_type": "enum",
+      "_values": [
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "_fields": [
+        "label",
+        "short"
+      ],
+      "sunday": {
+        "label": "Pazar",
+        "short": "Paz"
+      },
+      "monday": {
+        "label": "Pazartesi",
+        "short": "Pzt"
+      },
+      "tuesday": {
+        "label": "Salı",
+        "short": "Sal"
+      },
+      "wednesday": {
+        "label": "Çarşamba",
+        "short": "Çar"
+      },
+      "thursday": {
+        "label": "Perşembe",
+        "short": "Per"
+      },
+      "friday": {
+        "label": "Cuma",
+        "short": "Cum"
+      },
+      "saturday": {
+        "label": "Cumartesi",
+        "short": "Cmt"
+      }
+    },
+    "date_part": {
+      "_type": "enum",
+      "_values": [
+        "second",
+        "minute",
+        "hour",
+        "day",
+        "month",
+        "year"
+      ],
+      "_fields": [
+        "label",
+        "short"
+      ],
+      "second": {
+        "label": "saniye",
+        "short": "sn"
+      },
+      "minute": {
+        "label": "dakika",
+        "short": "dk"
+      },
+      "hour": {
+        "label": "saat",
+        "short": "sa"
+      },
+      "day": {
+        "label": "gün",
+        "short": "g"
+      },
+      "month": {
+        "label": "ay",
+        "short": "ay"
+      },
+      "year": {
+        "label": "yıl",
+        "short": "y"
+      }
+    },
+    "relative_time": {
+      "_type": "enum",
+      "_values": [
+        "ago",
+        "later",
+        "just_now"
+      ],
+      "_fields": [
+        "label",
+        "short"
+      ],
+      "_params": [
+        "count",
+        "unit"
+      ],
+      "ago": {
+        "label": "{count} {unit} önce",
+        "short": "{count}{unit} önce"
+      },
+      "later": {
+        "label": "{count} {unit} sonra",
+        "short": "{count}{unit} sonra"
+      },
+      "just_now": {
+        "label": "Az önce",
+        "short": "Az önce"
+      }
+    }
+  }
+}

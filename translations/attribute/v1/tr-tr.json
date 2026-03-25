@@ -1,0 +1,181 @@
+{
+  "address": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "adres"
+  },
+  "address_line": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "formal"
+    ],
+    "singular": "adres",
+    "formal": "adresiniz"
+  },
+  "birthdate": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "doğum tarihi"
+  },
+  "city": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "şehir"
+  },
+  "country": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "ülke"
+  },
+  "deletion_reason": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "silme nedeni"
+  },
+  "deletion_reason_confirm": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "hesap silme onayı"
+  },
+  "deletion_reason_details": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "silme nedeni açıklaması"
+  },
+  "district": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "ilçe"
+  },
+  "email": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "accusative"
+    ],
+    "singular": "e-posta",
+    "accusative": "e-postası"
+  },
+  "email_address": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "accusative"
+    ],
+    "singular": "e-posta adresi",
+    "accusative": "e-posta adresini"
+  },
+  "gender": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "cinsiyet"
+  },
+  "kvkk": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "KVKK bilgilendirme metni"
+  },
+  "name": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "formal"
+    ],
+    "singular": "ad",
+    "formal": "adınız"
+  },
+  "new_password": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "formal"
+    ],
+    "singular": "yeni şifre",
+    "formal": "yeni şifreniz"
+  },
+  "otp": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "doğrulama kodu"
+  },
+  "password": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "formal"
+    ],
+    "singular": "şifre",
+    "formal": "şifreniz"
+  },
+  "phone": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "accusative"
+    ],
+    "singular": "telefon",
+    "accusative": "telefonu"
+  },
+  "phone_number": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "accusative"
+    ],
+    "singular": "telefon numarası",
+    "accusative": "telefon numarasını"
+  },
+  "recovery_phone": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "kurtarma telefonu"
+  },
+  "remember_me": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "beni hatırla"
+  },
+  "surname": {
+    "_type": "attribute",
+    "_variants": [
+      "singular",
+      "formal"
+    ],
+    "singular": "soyad",
+    "formal": "soyadınız"
+  },
+  "zip_code": {
+    "_type": "attribute",
+    "_variants": [
+      "singular"
+    ],
+    "singular": "posta kodu"
+  }
+}

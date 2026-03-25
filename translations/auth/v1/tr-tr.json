@@ -1,68 +1,359 @@
 {
-    "login": {
-        "title": {
-            "type": "text",
-            "value": "Giriş Yap"
-        },
-        "subtitle": {
-            "type": "text",
-            "value": "Devam etmek için hesabınıza erişin"
-        },
-        "email_placeholder": {
-            "type": "text",
-            "value": "E-posta adresiniz"
-        },
-        "password_placeholder": {
-            "type": "text",
-            "value": "Şifreniz"
-        },
-        "forgot_password": {
-            "type": "text",
-            "value": "Şifremi Unuttum"
-        },
-        "submit": {
-            "type": "text",
-            "value": "Giriş Yap"
-        },
-        "no_account": {
-            "type": "text",
-            "value": "Hesabınız yok mu? Kayıt Olun"
-        },
-        "welcome": {
-            "type": "text",
-            "value": "Hoşgeldin :name"
-        }
-    },
-    "register": {
-        "title": {
-            "type": "text",
-            "value": "Yeni Hesap Oluştur"
-        },
-        "subtitle": {
-            "type": "text",
-            "value": "Hızlı ve kolay kayıt"
-        },
-        "submit": {
-            "type": "text",
-            "value": "Kayıt Ol"
-        },
-        "terms": {
-            "type": "text",
-            "value": "Kayıt olarak Hizmet Şartlarını kabul etmiş olursunuz."
-        }
-    },
-    "errors": {
-        "invalid_email": {
-            "type": "text",
-            "value": "Geçersiz e-posta adresi."
-        },
-        "password_short": {
-            "type": "text",
-            "value": "Şifre en az 6 karakter olmalıdır."
-        },
-        "user_not_found": {
-            "type": "text",
-            "value": "Böyle bir kullanıcı bulunamadı."
-        }
+  "header": {
+    "redirect": {
+      "_type": "text",
+      "value": "TURKTICARET.NET'e devam et"
     }
+  },
+  "pages": {
+    "home": {
+      "title": {
+        "_type": "text",
+        "value": "Giriş yap veya hesap oluştur"
+      },
+      "description": {
+        "_type": "text",
+        "value": "E-posta adresini kontrol ediyoruz. Mevcut bir hesabın varsa giriş ekranına, yoksa kayıt ekranına yönlendirileceksin."
+      }
+    },
+    "login": {
+      "saved_user": {
+        "title": {
+          "_type": "text",
+          "value": "Tekrar giriş yap"
+        },
+        "subtitle": {
+          "_type": "text",
+          "value": "Hoş geldin"
+        },
+        "description": {
+          "_type": "text",
+          "value": "Oturum süren doldu veya kayıtlı bir kullanıcı tespit edildi. Devam etmek için şifreni gir."
+        }
+      },
+      "title": {
+        "_type": "text",
+        "value": "Bir hesabın var, giriş yap"
+      },
+      "subtitle": {
+        "_type": "text",
+        "value": "Harika!"
+      },
+      "description": {
+        "_type": "rich_text",
+        "_components": [
+          "mark"
+        ],
+        "_params": [
+          "value"
+        ],
+        "_nodes": [
+          {
+            "_type": "mark",
+            "_children": [
+              {
+                "_type": "text",
+                "_params": [
+                  "value"
+                ],
+                "value": "{value}"
+              }
+            ]
+          },
+          {
+            "_type": "text",
+            "value": " hesabına giriş yapmak veya şifreni sıfırlamak için aşağıdaki seçenekleri kullanabilirsin."
+          }
+        ]
+      }
+    },
+    "verify": {
+      "login": {
+        "title": {
+          "_type": "text",
+          "value": "Bir hesabın var, giriş yap"
+        },
+        "subtitle": {
+          "_type": "text",
+          "value": "Harika!"
+        },
+        "with_password": {
+          "title": {
+            "_type": "text",
+            "value": "Doğrulama kodunu gir"
+          },
+          "subtitle": {
+            "_type": "text",
+            "value": "Son bir adım"
+          }
+        }
+      },
+      "register": {
+        "title": {
+          "_type": "text",
+          "value": "Başlamak için kodu gir"
+        },
+        "subtitle": {
+          "_type": "text",
+          "value": "Henüz bir hesabın yok"
+        }
+      },
+      "recovery": {
+        "title": {
+          "_type": "text",
+          "value": "Şifre sıfırlama kodunu gir"
+        },
+        "subtitle": {
+          "_type": "text",
+          "value": "Hesabını kurtar"
+        }
+      },
+      "description": {
+        "email": {
+          "_type": "rich_text",
+          "_components": [
+            "mark"
+          ],
+          "_params": [
+            "value",
+            "otp_size"
+          ],
+          "_nodes": [
+            {
+              "_type": "text",
+              "value": "Lütfen "
+            },
+            {
+              "_type": "mark",
+              "_children": [
+                {
+                  "_type": "text",
+                  "_params": [
+                    "value"
+                  ],
+                  "value": "{value}"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "_params": [
+                "otp_size"
+              ],
+              "value": " e-posta adresine gönderilen {otp_size} haneli doğrulama kodunu gir."
+            }
+          ]
+        },
+        "phone": {
+          "_type": "rich_text",
+          "_components": [
+            "mark"
+          ],
+          "_params": [
+            "value",
+            "otp_size"
+          ],
+          "_nodes": [
+            {
+              "_type": "text",
+              "value": "Lütfen "
+            },
+            {
+              "_type": "mark",
+              "_children": [
+                {
+                  "_type": "text",
+                  "_params": [
+                    "value"
+                  ],
+                  "value": "{value}"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "_params": [
+                "otp_size"
+              ],
+              "value": " telefon numarasına gönderilen {otp_size} haneli doğrulama kodunu gir."
+            }
+          ]
+        }
+      }
+    },
+    "recovery": {
+      "title": {
+        "_type": "text",
+        "value": "Sana nasıl yardımcı olabiliriz?"
+      },
+      "subtitle": {
+        "_type": "text",
+        "value": "Birlikte çözelim"
+      },
+      "description": {
+        "_type": "text",
+        "value": "Hesabınla ilgili yaşadığın sorunu seçerek devam edebilirsin. Seçimine göre seni uygun çözüm adımlarına yönlendireceğiz."
+      },
+      "option": {
+        "reset_password": {
+          "_type": "text",
+          "value": "Şifremi sıfırlamak veya hesabımı kurtarmak istiyorum"
+        },
+        "otp_not_received": {
+          "_type": "text",
+          "value": "Doğrulama kodu gelmedi"
+        },
+        "account_hacked": {
+          "_type": "text",
+          "value": "Hesabım ele geçirilmiş olabilir"
+        },
+        "account_suspended": {
+          "_type": "text",
+          "value": "Hesabım durduruldu, bilgi almak istiyorum"
+        },
+        "contact_support": {
+          "_type": "text",
+          "value": "Müşteri hizmetleriyle görüşmek istiyorum"
+        }
+      },
+      "method": {
+        "phone": {
+          "title": {
+            "_type": "text",
+            "_params": [
+              "phone"
+            ],
+            "value": "{phone} ile biten telefon numarasına"
+          },
+          "description": {
+            "_type": "text",
+            "value": "Güvenlik ayarlarında kayıtlı kurtarma telefon numarası"
+          }
+        },
+        "email": {
+          "title": {
+            "_type": "text",
+            "_params": [
+              "email"
+            ],
+            "value": "{email} ile başlayan e-posta adresine"
+          },
+          "description": {
+            "_type": "text",
+            "value": "Güvenlik ayarlarında kayıtlı kurtarma e-posta adresi"
+          }
+        }
+      }
+    },
+    "recovery_otp": {
+      "title": {
+        "_type": "text",
+        "value": "Şifre sıfırlama kodu al"
+      },
+      "subtitle": {
+        "_type": "text",
+        "value": "Hesabını kurtar"
+      },
+      "description": {
+        "email": {
+          "_type": "rich_text",
+          "_components": [
+            "mark"
+          ],
+          "_params": [
+            "value"
+          ],
+          "_nodes": [
+            {
+              "_type": "text",
+              "value": "Sıfırlama kodu "
+            },
+            {
+              "_type": "mark",
+              "_children": [
+                {
+                  "_type": "text",
+                  "_params": [
+                    "value"
+                  ],
+                  "value": "{value}"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "value": " adresine gönderilir. İstersen diğer yöntemleri de seçebilirsin."
+            }
+          ]
+        },
+        "phone": {
+          "_type": "rich_text",
+          "_components": [
+            "mark"
+          ],
+          "_params": [
+            "value"
+          ],
+          "_nodes": [
+            {
+              "_type": "text",
+              "value": "Sıfırlama kodu sonu "
+            },
+            {
+              "_type": "mark",
+              "_children": [
+                {
+                  "_type": "text",
+                  "_params": [
+                    "value"
+                  ],
+                  "value": "{value}"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "value": " olan numaraya gönderilir. İstersen diğer yöntemleri de seçebilirsin."
+            }
+          ]
+        },
+        "other": {
+          "_type": "text",
+          "value": "Güvenlik ayarlarında tanımladığın kurtarma yöntemlerine şifre sıfırlama kodu gönderebilirsin."
+        }
+      }
+    },
+    "qr_login": {
+      "title": {
+        "_type": "text",
+        "value": "Hesabına QR ile giriş yap"
+      },
+      "subtitle": {
+        "_type": "text",
+        "value": "QR kodu okut"
+      },
+      "description": {
+        "_type": "text",
+        "value": "Uygulama üzerinden QR kodu okuttuktan sonra giriş işlemin otomatik olarak tamamlanacak."
+      },
+      "steps": {
+        "title": {
+          "_type": "text",
+          "value": "Aşağıdaki adımları takip ederek QR kodunu tara"
+        },
+        "step_1": {
+          "_type": "text",
+          "value": "1. Telefonundan TURKTICARET.NET uygulamasını aç"
+        },
+        "step_2": {
+          "_type": "text",
+          "value": "2. Menüden QR kodu ile onaylama seçeneğine dokun"
+        },
+        "step_3": {
+          "_type": "text",
+          "value": "3. Telefonunu bu ekrana doğrultarak QR kodunu tara"
+        }
+      }
+    }
+  }
 }
